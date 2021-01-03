@@ -1,0 +1,20 @@
+.searchBx,
+.searchResults {
+  margin: 20px auto;
+  width: 90%;
+  border: solid 2px #153035;
+  padding: 20px;
+}
+.searchBx h3 {
+  color: #153035;
+}
+.searchBx input {
+  margin: 5px 5px 5px 0;
+  width: 60%;
+  line-height: 20px; 
+}
+.searchItem {
+  margin: 5px auto;
+  border: solid 2px #153035;
+  padding: 20px;
+}
