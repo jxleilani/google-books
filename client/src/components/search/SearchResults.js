@@ -2,12 +2,14 @@ import React from 'react'
 import './styles.css'
 import SearchItem from './SearchItem'
 
-function SearchResults() {
+function SearchResults({results}) {
   return (
     <section>
       <div className="searchResults">
         <h3>Results</h3>
-        <SearchItem />
+        {results.map(result => (
+          <SearchItem result={result}/>
+        ))}
       </div>
     </section>
   )

@@ -1,10 +1,10 @@
 import React from 'react'
 import './styles.css'
 
-function SearchItem() {
+function SearchItem({result}) {
   return (
     <div className="searchItem">
-      <p>results here....</p>
+      <p>{result.volumeInfo.title}</p>
     </div>
   )
 }

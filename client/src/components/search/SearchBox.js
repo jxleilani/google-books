@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./styles.css";
 import Axios from "axios";
+import SearchResults from "./SearchResults";
 
 function SearchBox() {
   // const [apiKey, setApiKey] = useState("");
@@ -38,6 +39,7 @@ function SearchBox() {
           <button>Search</button>
         </form>
       </div>
+      <SearchResults results={result} />
     </section>
   );
 }
