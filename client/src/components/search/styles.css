@@ -2,6 +2,7 @@
 .searchResults {
   margin: 20px auto;
   width: 90%;
+  max-width: 1000px;
   border: solid 2px #153035;
   padding: 20px;
 }
@@ -14,7 +15,33 @@
   line-height: 20px; 
 }
 .searchItem {
+  display: flex;
+  flex-direction: column;
+  position: relative;
   margin: 5px auto;
   border: solid 2px #153035;
   padding: 20px;
+}
+.searchItem .buttons {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+.searchItem .buttons button:nth-child(1) {
+  margin-right: 5px;
+}
+.searchItem .buttons button {
+  padding: 3px;
+}
+.searchItem p {
+  margin-bottom: 5px;
+}
+.searchItem p:nth-last-child(3) {
+  margin-bottom: 10px;
+}
+.searchItem .details {
+  display: flex;
+}
+.searchItem .details img {
+  margin-right: 10px;
 }
