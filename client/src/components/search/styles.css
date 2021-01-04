@@ -36,11 +36,21 @@
 .searchItem p {
   margin-bottom: 5px;
 }
-.searchItem p:nth-last-child(3) {
+.searchItem p:nth-child(1) {
+  font-weight: bold;
+}
+.searchItem p:nth-child(2),
+.searchItem p:nth-child(3) {
+  font-size: 14px;
+}
+.searchItem p:nth-child(3) {
   margin-bottom: 10px;
 }
 .searchItem .details {
   display: flex;
+}
+.searchItem .details p {
+  font-size: 16px;
 }
 .searchItem .details img {
   margin-right: 10px;
