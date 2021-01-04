@@ -1,7 +1,6 @@
 import React from 'react'
-import './styles.css'
 import { Link } from 'react-router-dom'
-
+import './styles.css'
 
 function Navbar() {
   return (
@@ -10,10 +9,10 @@ function Navbar() {
       <nav>
         <ul className="nav-links">
           <li>
-            <Link>Search</Link>
+            <Link to="/search">Search</Link>
           </li>
           <li>
-            <Link>Saved</Link>
+            <Link to="/saved">Saved</Link>
           </li>
         </ul>
       </nav>
