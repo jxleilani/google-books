@@ -3,10 +3,10 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import Navbar from "./components/header/Navbar";
 import Search from "./components/search/SearchBox";
 import Saved from "./components/saved/Saved";
-import SearchResults from "./components/search/SearchResults"
+import SearchResults from "./components/search/SearchResults";
 
 function App() {
-  return (
+    return (
     <Router>
       <div className="App">
         <Navbar />
