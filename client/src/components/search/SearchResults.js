@@ -8,7 +8,7 @@ function SearchResults({results}) {
       <div className="searchResults">
         <h3>Results</h3>
         {results.map(result => (
-          <SearchItem result={result}/>
+          <SearchItem key={result.id} result={result} />
         ))}
       </div>
     </section>
