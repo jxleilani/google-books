@@ -1,6 +1,6 @@
 import React from 'react'
 
-function SavedItem({ item }) {
+function SavedItem({ item, handleDelete }) {
   return (
     <div className="savedItem">
       <p value="title">{item.title}</p>
@@ -15,7 +15,7 @@ function SavedItem({ item }) {
       </div>
       <div className="buttons">
         <button>View</button>
-        <button>Delete</button>
+        <button onClick={() => handleDelete(item._id)}>Delete</button>
       </div>
     </div>
   )
