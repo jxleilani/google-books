@@ -45,3 +45,6 @@
 .savedItem .details img {
   margin-right: 10px;
 }
+button {
+  cursor: pointer;
+}

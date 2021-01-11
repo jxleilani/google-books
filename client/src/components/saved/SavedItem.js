@@ -14,7 +14,7 @@ function SavedItem({ item, handleDelete }) {
         <p>{item.description}</p>
       </div>
       <div className="buttons">
-        <button>View</button>
+        <a href={item.link}><button>View</button></a>
         <button onClick={() => handleDelete(item._id)}>Delete</button>
       </div>
     </div>

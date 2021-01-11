@@ -25,7 +25,6 @@ function SearchBox() {
       .then((res) => {
         console.log(res.data.items)
         setResult(res.data.items);
-        // console.log("Results:" + JSON.stringify(result));
       })
       .catch((err) => console.log(err));
   }

@@ -25,6 +25,7 @@ function SearchItem({ result }) {
       author: result.volumeInfo.authors,
       description: result.volumeInfo.description,
       image: result.volumeInfo.imageLinks.smallThumbnail,
+      link: result.volumeInfo.infoLink
     });
   };
 
@@ -41,7 +42,7 @@ function SearchItem({ result }) {
         <p>{result.volumeInfo.description}</p>
       </div>
       <div className="buttons">
-        <button>View</button>
+        <a href={result.volumeInfo.infoLink}><button>View</button></a>
         <button onClick={handleSave}>Save</button>
       </div>
     </div>
