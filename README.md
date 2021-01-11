@@ -1,5 +1,4 @@
 # Google Books API
-![Heroku](https://pyheroku-badge.herokuapp.com/?app=whispering-journey-26103&style=plastic)
 https://git.heroku.com/whispering-journey-26103.git
 
 This web applications utilizes the [Google Books API](https://developers.google.com/books) to search for and save a list of books you'd like to read.
