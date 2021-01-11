@@ -7,11 +7,8 @@ function SearchItem({ result }) {
 
   useEffect(() => {
     if(book.hasOwnProperty("title")){
-      // now that I have the book I want to save it
-      console.log(book);
-
       API.saveBook(book)
-      .then(() => console.log("hello"))
+      .then(() => console.log("Book has been saved."))
       .catch((err) => console.log(err));
     }
   }, [book]);
