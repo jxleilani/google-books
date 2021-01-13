@@ -39,7 +39,7 @@ function SearchItem({ result }) {
         <p>{result.volumeInfo.description}</p>
       </div>
       <div className="buttons">
-        <a href={result.volumeInfo.infoLink}><button>View</button></a>
+        <a href={result.volumeInfo.infoLink} target="_blank" rel="noopener noreferrer"><button>View</button></a>
         <button onClick={handleSave}>Save</button>
       </div>
     </div>
